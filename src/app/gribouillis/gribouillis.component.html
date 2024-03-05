@@ -1,0 +1,16 @@
+<div class="gribouillis-card" [ngClass]="{'gribouillis-liked': this.gribouillis.isLiked === true}">
+<h2>{{gribouillis.title | uppercase }}</h2>
+<p class="metaData">Le {{gribouillis.createdDate | date : 'dd/MM/yy, à HH:mm'}}</p>
+<img [src] = "gribouillis.drawingUrl" [alt]="gribouillis.title">
+<p>{{gribouillis.description}}</p>
+<p class="metaData" *ngIf ="gribouillis.location">Gribouillé à {{gribouillis.location }}</p>
+<p class="metaData"><button class="metaData" (click)="handleLike()" [class.liked]="gribouillis.isLiked"></button>
+    <span [ngStyle]="{
+        color: 'rgba(' +
+          (gribouillis.likes * 15 < 13 ? gribouillis.likes * 15 : 13) + ',' +
+          (gribouillis.likes * 5 < 1 ? gribouillis.likes * 5 : 1) + ',' +
+          (gribouillis.likes * 2 < 50 ? gribouillis.likes * 2 : 50) + ', 0.89)'
+      }"> {{gribouillis.likes}}</span>
+</p>
+</div>
+

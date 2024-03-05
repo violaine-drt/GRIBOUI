@@ -1,0 +1,64 @@
+.gribouillis-card {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f3e2ffd8;
+    
+
+    & img {
+      width: 100%;
+    }
+  }
+
+.gribouillis-liked {
+  box-sizing: border-box;
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #e6c7fcd8;
+  
+}
+
+h2 {
+  margin-bottom: 0;
+  font-family:CabinSketch;
+  font-weight: 400;
+  font-size: 30px;
+
+}
+
+p {
+  font-family: ChelseaMarket;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.metaData {
+  font-family: LondrinaSketch;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+button {
+  width: 20px; 
+  height: 20px;
+  border: none; 
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+button.liked{
+  background: url("../../assets/dislike.png") no-repeat;
+  background-size: cover;
+}
+
+button:not(.liked){
+  background: url("../../assets/like.png") no-repeat;
+  background-size: cover;
+}
+
+.gribouillis-page {
+  min-height: 100vh;
+}
