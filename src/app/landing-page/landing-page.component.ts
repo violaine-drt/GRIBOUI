@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+  constructor() {}
+  
+  ngOnInit(): void {
+  }
+
+  onContinue(): void {
+    
+  }
 
 }
