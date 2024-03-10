@@ -9,6 +9,7 @@ import * as fr from '@angular/common/locales/fr';
 import { GribouillisListComponent } from './gribouillis-list/gribouillis-list.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SingleGribouillisComponent } from './single-gribouillis/single-gribouillis.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     GribouillisComponent,
     GribouillisListComponent,
     HeaderComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    SingleGribouillisComponent
   ],
   imports: [
     BrowserModule,
