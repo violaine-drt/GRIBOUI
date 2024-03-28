@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Gribouillis } from '../models/gribouillis.model';
 import { GribouillisService } from '../services/gribouillis.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-single-gribouillis',
@@ -12,7 +12,8 @@ export class SingleGribouillisComponent implements OnInit {
   gribouillis!: Gribouillis;
 
   constructor(private gribouillisService: GribouillisService,
-              private route:ActivatedRoute){}
+              private route:ActivatedRoute,
+              private router2: Router){}
 
   ngOnInit() {
     const gribouillisId = +this.route.snapshot.params['id']; //ici, le + transforme le string (de l'id) en  number
@@ -21,6 +22,9 @@ export class SingleGribouillisComponent implements OnInit {
   handleLike(){
     this.gribouillisService.handleLikeById(this.gribouillis.id);
     } 
+    returnMenuGribouillis(){
+      this.router2.navigateByUrl('gribouillis')
+    }
 }
 
 

@@ -5,7 +5,8 @@
     <img [src] = "gribouillis.drawingUrl" [alt]="gribouillis.title">
     <p>{{gribouillis.description}}</p>
     <p class="metaData" *ngIf ="gribouillis.location">Gribouillé à {{gribouillis.location }}</p>
-    <p class="metaData"><button class="metaData" (click)="handleLike()" [class.liked]="gribouillis.isLiked"></button>
+    <p class="metaData">
+        <button class="likedButton" (click)="handleLike()" [class.liked]="gribouillis.isLiked"></button>
         <span [ngStyle]="{
             color: 'rgba(' +
               (gribouillis.likes * 15 < 13 ? gribouillis.likes * 15 : 13) + ',' +
@@ -13,5 +14,6 @@
               (gribouillis.likes * 2 < 50 ? gribouillis.likes * 2 : 50) + ', 0.89)'
           }"> {{gribouillis.likes}}</span>
     </p>
+    <button class="button-ouvrir" (click)="returnMenuGribouillis()">Retour</button>
     </div>
 </body>

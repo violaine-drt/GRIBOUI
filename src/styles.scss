@@ -87,3 +87,54 @@ left: 0px;
 
 
 
+.button-ouvrir {
+  width: 30%; 
+  height: 1.1rem;
+  border: none; 
+  cursor: pointer;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.517);
+  background-image: none;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgba(35, 1, 41, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #390257;
+  border-color: #390257; 
+  font-family: CabinSketch, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 0px;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.button-ouvrir:hover{
+  box-shadow: rgba(38, 1, 65, 0.174) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  color: rgb(255, 250, 151);
+  background-color: rgba(13, 1, 50, 0.681);
+}
+
+.button-ouvrir:hover:after {
+top: 0px;
+left: 0px;
+}
+
+@media (min-width: 768px) {
+.button-52 {
+  padding: 13px 50px 13px;
+}
+}
+
+
+

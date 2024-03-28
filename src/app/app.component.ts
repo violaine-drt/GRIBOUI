@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, interval, map, filter, tap } from 'rxjs';
 
 
 @Component({
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
+
   
-  ngOnInit() {
-       
-  }
+  ngOnInit() {}
+
+
 }
